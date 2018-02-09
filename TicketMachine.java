@@ -23,9 +23,19 @@ public class TicketMachine
      * Note that the price must be greater than zero, and there
      * are no checks to ensure this.
      */
-    public TicketMachine(int cost)
+    public TicketMachine()
     {
         price = 1000;
+        balance = 0;
+        total = 0;
+    }
+    
+    /**
+     * Añade ahora un segundo constructor a la clase TicketMachine que permita crear máquinas cuyo precio del billete sea el que se indica por parámetro.
+     */
+    public TicketMachine(int cost)
+    {
+        price = 0;
         balance = 0;
         total = 0;
     }
@@ -77,10 +87,10 @@ public class TicketMachine
     }
     
     /**
-     * Nuevo metodo 2.41 showPrice
+     * Añade ahora un segundo constructor a la clase TicketMachine que permita crear máquinas cuyo precio del billete sea el que se indica por parámetro.
      */
-    public void showPrice(int amount)
+    public void createMachine(int amount)
     {
-        price = balance + amount;
+        ;
     }
 }
