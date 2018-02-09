@@ -75,4 +75,12 @@ public class TicketMachine
         // Clear the balance.
         balance = 0;
     }
+    
+    /**
+     * Nuevo metodo 2.41 showPrice
+     */
+    public void showPrice(int amount)
+    {
+        price = balance + amount;
+    }
 }
