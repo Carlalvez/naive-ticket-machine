@@ -25,7 +25,7 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = cost;
+        price = 1000;
         balance = 0;
         total = 0;
     }
