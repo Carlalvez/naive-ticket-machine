@@ -19,9 +19,7 @@ public class TicketMachine
     private int total;
 
     /**
-     * Create a machine that issues tickets of the given price.
-     * Note that the price must be greater than zero, and there
-     * are no checks to ensure this.
+     * Modifica el constructor de la clase TicketMachine para que no admita ningún parámetro. En lugar de ello, el precio del billete siempre será de 1000 céntimos.
      */
     public TicketMachine()
     {
@@ -35,11 +33,22 @@ public class TicketMachine
      */
     public TicketMachine(int cost)
     {
-        price = 0;
+        price = cost;
         balance = 0;
         total = 0;
     }
-
+    
+     /**
+     * Añade a la clase un método llamado vaciar que simule el proceso de extraer todo el dinero que haya acumulado en la máquina. Este método no devuelve nada y vamos a dar por hecho que se
+     * va a invocar siempre que no hay ninguna operación en curso (es decir, siempre que el balance de la máquina esté a 0).
+     */
+    public void setVaciar (int balance)
+    {
+        if (balance == 0);{
+            total = 0;
+    }
+}
+    
     /**
      * Return the price of a ticket.
      */
@@ -84,13 +93,5 @@ public class TicketMachine
         total = total + balance;
         // Clear the balance.
         balance = 0;
-    }
-    
-    /**
-     * Añade ahora un segundo constructor a la clase TicketMachine que permita crear máquinas cuyo precio del billete sea el que se indica por parámetro.
-     */
-    public void createMachine(int amount)
-    {
-        ;
     }
 }
