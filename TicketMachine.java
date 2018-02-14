@@ -38,16 +38,21 @@ public class TicketMachine
         total = 0;
     }
     
-     /**
-     * Añade a la clase un método llamado vaciar que simule el proceso de extraer todo el dinero que haya acumulado en la máquina. Este método no devuelve nada y vamos a dar por hecho que se
-     * va a invocar siempre que no hay ninguna operación en curso (es decir, siempre que el balance de la máquina esté a 0).
-     */
+    public void vaciar()
+    { 
+       total = 0;
+    }
+    
+    /**
+       * Añade a la clase un método llamado vaciar que simule el proceso de extraer todo el dinero que haya acumulado en la máquina. Este método no devuelve nada y vamos a dar por hecho que se
+       * va a invocar siempre que no hay ninguna operación en curso (es decir, siempre que el balance de la máquina esté a 0).
+    */
     public void setVaciar (int balance)
     {
         if (balance == 0);{
             total = 0;
     }
-}
+    }
     
     /**
      * Return the price of a ticket.
